@@ -4,6 +4,10 @@
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine_Learning-orange.svg)](https://scikit-learn.org/)
 
+
+> 📊 **Project Presentation:** Check out the [Executive Summary & Business Impact Presentation](./Pablo%20Barrio%20Criado.pdf) for a quick overview of the results, the model pipeline, and the Streamlit app.
+
+---
 ## 📌 Overview
 This project goes beyond standard predictive modeling by implementing a **Prescriptive Analytics System**. It is a full-stack Machine Learning application designed to predict customer churn in a telecommunications company and, more importantly, **automatically recommend targeted retention strategies** for the sales team.
 
