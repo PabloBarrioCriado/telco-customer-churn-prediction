@@ -57,7 +57,7 @@ If you want to run this project on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/telco-Costumer.git](https://github.com/your-username/telco-Costumer.git)
+   git clone [https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git](https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git)
    cd telco-Costumer
 
 Install the required dependencies:
