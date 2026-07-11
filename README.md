@@ -49,7 +49,7 @@ telco-Costumer/
 ├── Descripción de variables.docx             # Variable description (in spanish)
 ├── README.md                                 # Project documentation
 └── requirements.txt                          # Strict dependencies for Cloud Deployment
-
+```
 
 ## 💻 How to Run Locally
 
@@ -59,15 +59,16 @@ If you want to run this project on your local machine, follow these steps:
    ```bash
    git clone [https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git](https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git)
    cd telco-Costumer
-
+   ```
 Install the required dependencies:
 (It is recommended to use a virtual environment)
 
 ```bash
 pip install -r requirements.txt
-
+```
 Launch the application:
 
 ```bash
 cd src
 streamlit run app.py
+```
