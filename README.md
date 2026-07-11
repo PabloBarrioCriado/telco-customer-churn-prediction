@@ -72,6 +72,4 @@ If you want to run this project on your local machine, follow these steps:
    cd src
    streamlit run app.py
    ```
-cd src
-streamlit run app.py
-```
+
