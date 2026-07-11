@@ -25,8 +25,9 @@ This project was built with a strict focus on statistical rigor and software eng
 * **Safe Memory Management:** Implemented runtime monkey-patching to handle specific serialization incompatibilities between strict `numpy` versions and `scikit-learn` categorical encoders.
 
 ## 🛠️ Technology Stack
-* **Modeling & ML:** `scikit-learn`, `scipy`
+* **Modeling & Machine Learning:** `scikit-learn`, `scipy`, `xgboost`, `lightgbm`
 * **Data Manipulation:** `pandas`, `numpy`
+* **Data Visualization:** `matplotlib`, `seaborn`
 * **Deployment & UI:** `streamlit`
 * **Serialization:** `joblib`
 
