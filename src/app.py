@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 from transformer import ServiceAggregator
 import sklearn.utils._encode as encode
 import sklearn.preprocessing._encoders as encoders
@@ -35,7 +36,13 @@ st.divider()
 # 2. Model Loading
 @st.cache_resource
 def load_model():
-    return joblib.load('../models/churn_logistic_regression.joblib')
+   
+    directorio_actual = os.path.dirname(os.path.abspath(__file__))
+    
+    
+    ruta_modelo = os.path.join(directorio_actual, '../models/churn_logistic_regression.joblib')
+    
+    return joblib.load(ruta_modelo)
 
 modelo = load_model()
 
