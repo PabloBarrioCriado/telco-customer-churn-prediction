@@ -57,18 +57,21 @@ If you want to run this project on your local machine, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git](https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git)
-   cd telco-Costumer
+   git clone https://github.com/PabloBarrioCriado/telco-customer-churn-prediction.git
+   cd telco-customer-churn-prediction
    ```
-Install the required dependencies:
-(It is recommended to use a virtual environment)
 
-```bash
-pip install -r requirements.txt
-```
-Launch the application:
+2. **Install the required dependencies:**
+   *(It is recommended to use a virtual environment)*
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```bash
+3. **Launch the application:**
+   ```bash
+   cd src
+   streamlit run app.py
+   ```
 cd src
 streamlit run app.py
 ```
