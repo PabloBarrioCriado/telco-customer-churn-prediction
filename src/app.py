@@ -59,14 +59,30 @@ with col1:
 
 with col2:
     st.subheader("🌐 Internet Services")
+    
+    
+    phone_service = st.selectbox("Does the client have Phone Service?", ["Yes", "No"])
+    
+    if phone_service == "Yes":
+        multiple_lines = st.selectbox("Multiple Lines", ["No", "Yes"])
+    else:
+        multiple_lines = "No phone service" 
+        
     internet_service = st.selectbox("Internet Service", ["DSL", "Fiber optic", "No"])
-    multiple_lines = st.selectbox("Multiple Lines", ["No", "Yes", "No phone service"])
-    online_security = st.selectbox("Online Security", ["No", "Yes", "No internet service"])
-    online_backup = st.selectbox("Online Backup", ["No", "Yes", "No internet service"])
-    device_protection = st.selectbox("Device Protection", ["No", "Yes", "No internet service"])
-    tech_support = st.selectbox("Tech Support", ["No", "Yes", "No internet service"])
-    streaming_tv = st.selectbox("Streaming TV", ["No", "Yes", "No internet service"])
-    streaming_movies = st.selectbox("Streaming Movies", ["No", "Yes", "No internet service"])
+    
+    
+    if internet_service != "No":
+        online_security = st.selectbox("Online Security", ["No", "Yes"])
+        online_backup = st.selectbox("Online Backup", ["No", "Yes"])
+        device_protection = st.selectbox("Device Protection", ["No", "Yes"])
+        tech_support = st.selectbox("Tech Support", ["No", "Yes"])
+        streaming_tv = st.selectbox("Streaming TV", ["No", "Yes"])
+        streaming_movies = st.selectbox("Streaming Movies", ["No", "Yes"])
+    else:
+        
+        online_security = online_backup = device_protection = tech_support = \
+        streaming_tv = streaming_movies = "No internet service"
+        st.info("ℹ️ Internet services are disabled for this profile.")
 
 with col3:
     st.subheader("💳 Contract and Payments")
